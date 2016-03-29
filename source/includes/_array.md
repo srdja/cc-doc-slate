@@ -136,7 +136,7 @@ Arrays can be destroyed by passing a pointer of the Array structure to `array_de
 
 param | type | in/out | description
 ----- | ---- | ------ | -----------
-1 | Array* | int | Pointer to an array that is to be destroyed
+1 | Array* | in | Pointer to an array that is to be destroyed
 
 ### Return
 
@@ -190,7 +190,7 @@ if (array_add(ar, "foo") != CC_OK)
 
 ```
 
-Adding elements to an array can be done via `array_add`. Which appends the new element to the end of the Array, making it the element with the highest index. This function returns a status code to indicate success or failure.
+Adding elements to an array can be done via `array_add` which appends the new element to the end of the Array, making it the element with the highest index. This function returns a status code to indicate success or failure.
 
 
 ### Function
@@ -199,7 +199,7 @@ Adding elements to an array can be done via `array_add`. Which appends the new e
 
 param | type | in/out | description
 ----- | ---- | ------ | -----------
-1 | Array* | in | Pointer to an array that is to be destroyed
+1 | Array* | in | Pointer to an array to which the element is being added
 2 | void* | in | Pointer to an element that is being added
 
 
