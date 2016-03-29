@@ -9,7 +9,8 @@ toc_footers:
 
 includes:
   - array
-  
+  - hashtable
+
 search: true
 ---
 
